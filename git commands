@@ -1,0 +1,33 @@
+git init -- creates git repository in folder
+
+git status -- tells you what you currently have in each 3 spaces
+
+git add xx -- adding new documents/versions of documents to the staging area FROM working directory
+
+git add . -- add all files
+
+git commit -m "descriptive message of changes being comitted"
+
+ESC -- : -- q!		-quit vi text editor
+
+git show -- shows the differences made in recent commit
+
+git diff -- compares current version, with prior version, will show you what 				diffeent steps you made in red/green font
+
+git diff --staged	---compares staging area to working directory
+
+git log --tells you history of all the different commits
+
+	git log --stat   			:provides more history
+	git log --oneline			:compact info
+	git log --graph --decorate	:shows you dependencies of different commits w diff branches
+
+HOW TO REVERT TO A PRIOR COMMIT:
+
+git show 67d39a9dd0fc0cefe8eb1402274308629b5d35c1	: will show info from a prior commit
+
+git show HEAD~x    : will show info from a prior commit, designated by commit number 'x'
+
+
+git log				(find number of checkout)
+git checkout xxx	(insert number of checkout) will temporarily change to prior version- but NOT LOSING ANYTHING
